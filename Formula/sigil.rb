@@ -1,26 +1,26 @@
 class Sigil < Formula
   desc "Machine-first programming language designed for canonical code generation"
   homepage "https://github.com/inerte/sigil"
-  version "2026-03-28T22-33-28Z"
+  version "2026-03-28T22-58-44Z"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/inerte/sigil/releases/download/2026-03-28T22-33-28Z/sigil-2026-03-28T22-33-28Z-darwin-arm64.tar.gz"
-      sha256 "810027d382cc83122e6ea2149884a5fa930567e195ea9081a966e12bc31c43c1"
+      url "https://github.com/inerte/sigil/releases/download/2026-03-28T22-58-44Z/sigil-2026-03-28T22-58-44Z-darwin-arm64.tar.gz"
+      sha256 "b0f2177305c943e769f9c094d351c048f0be28ef4a4ce12f10207616f969934d"
     else
-      url "https://github.com/inerte/sigil/releases/download/2026-03-28T22-33-28Z/sigil-2026-03-28T22-33-28Z-darwin-x64.tar.gz"
-      sha256 "e17ae7d840d0e34c5d662e99e10f7f987c1cd10c9ac56ea3d30a7e06768fc49f"
+      url "https://github.com/inerte/sigil/releases/download/2026-03-28T22-58-44Z/sigil-2026-03-28T22-58-44Z-darwin-x64.tar.gz"
+      sha256 "ec3548b3ad1829d9ddef01899a00e671984bbd7a4d771ad7a60aaccbcdf07423"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/inerte/sigil/releases/download/2026-03-28T22-33-28Z/sigil-2026-03-28T22-33-28Z-linux-arm64.tar.gz"
-      sha256 "34ccfd9619f99fc0c6ac14bfee23dda341574d6dcd38520830e2e7085c77a062"
+      url "https://github.com/inerte/sigil/releases/download/2026-03-28T22-58-44Z/sigil-2026-03-28T22-58-44Z-linux-arm64.tar.gz"
+      sha256 "c6808832dac0130aba95002aeea5dbeeca93e0f32848190ef2ca0d92034315b7"
     else
-      url "https://github.com/inerte/sigil/releases/download/2026-03-28T22-33-28Z/sigil-2026-03-28T22-33-28Z-linux-x64.tar.gz"
-      sha256 "b2f542bd721a2118426a42ca5ae50aa0f303286da58f12cddc66036a82b476ed"
+      url "https://github.com/inerte/sigil/releases/download/2026-03-28T22-58-44Z/sigil-2026-03-28T22-58-44Z-linux-x64.tar.gz"
+      sha256 "1c1ff3542efde87262cfe3a26089c4a9455a33447e29ce39d80f83452ce11706"
     end
   end
 
@@ -30,6 +30,6 @@ class Sigil < Formula
   end
 
   test do
-    assert_match "sigil 2026-03-28T22-33-28Z", shell_output("#{bin}/sigil --version")
+    assert_match "sigil 2026-03-28T22-58-44Z", shell_output("#{bin}/sigil --version")
   end
 end
